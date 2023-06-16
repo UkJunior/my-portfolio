@@ -1,0 +1,130 @@
+.hero-section {
+  text-align: center;
+  border: 1px solid red;
+  position: relative;
+  height: 100vh;
+
+  .hero {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6em 0 0;
+    padding: 5em 9em 0 9em;
+    
+    .hero-left {
+      text-align: left;
+      width: 100%;
+      max-width: 534px;
+
+      h1 {
+        font-family: "Aleo";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 65px;
+        line-height: 84px;
+      }
+
+      span {
+        background: linear-gradient(180deg, #313169 46.88%, #722552 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      p {
+        font-family: "Cabin";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #08080d;
+      }
+
+      .social-links {
+        display: flex;
+        margin: 60px 0 70px;
+        align-items: flex-start;
+        text-align: left;
+
+        .circle-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          margin-right: 1em;
+          background-color: #313169;
+        }
+
+        .circle-icon svg {
+          font-size: 24px;
+          color: #fff;
+        }
+      }
+
+      .btn-connect-me {
+        background: #313169;
+        border: 1px solid #313169;
+        color: #f9f9f9;
+        padding: 18px 32px;
+        font-family: "Cabin";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+
+        &:hover {
+          cursor: pointer !important;
+          background: #4b4b8a;
+        }
+      }
+    }
+
+    .hero-right {
+      .image-container {
+        position: relative;
+        width: 400px;
+        z-index: 0;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-container img {
+        display: block;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        height: 100%;
+        border: 6px solid black;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom: 150px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .anchor-link {
+    text-align: center;
+  }
+  .w {
+    width: 45px;
+    height: 45px;
+    font-size: 1em;
+    color: #08080d;
+  }
+}

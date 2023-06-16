@@ -1,0 +1,56 @@
+.bout {
+  height: 100vh;
+  border: 1px solid red;
+  text-align: center;
+  padding: 1em 0 0 0 ;
+
+  section {
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    padding: 75px 3em 0em 7em;
+
+    text-align: left;
+
+    .about_left {
+      position: relative;
+      .image_deco {
+        height: 390px;
+        top: 20;
+        margin-bottom: 2em;
+      }
+
+      .about_img {
+        position: absolute;
+        left: 30px;
+        top: 1px;
+        height: 360px;
+        width: 360px;
+        margin-bottom: 2em;
+      }
+    }
+
+    .about_right {
+      h1 {
+        font-family: "Aleo";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 22px;
+        color: #313169;
+      }
+
+      p {
+        padding-left: 3.5em;
+        font-family: "Cabin";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #08080d;
+      }
+    }
+  }
+}
