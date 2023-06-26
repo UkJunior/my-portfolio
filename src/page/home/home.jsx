@@ -4,8 +4,10 @@ import Hero from '../../components/hero/hero'
 import Footer from '../../components/footer/footer'
 import Navbar from '../../components/navbar/navbar'
 import Banner from '../../components/banner/banner'
+import Skill from '../../components/skill/skill'
 import About from '../../components/about/about'
 import Slide from '../../components/slide/slide'
+import Project from '../../components/project/project'
 
 
 function Home() {
@@ -14,6 +16,8 @@ function Home() {
       <Navbar/>
       <Hero/>
       <About/>
+      <Skill/>
+      <Project/>
       <Banner/>
       <Footer/>
     </div>

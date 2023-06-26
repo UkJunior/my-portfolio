@@ -35,12 +35,12 @@ function Hero() {
           <button className="btn-connect-me">Connect with Kzzy</button>
         </div>
         <div className="hero-right">
-          <div class="image-container">
+          <div className="image-container">
             <img
               src="https://user-images.githubusercontent.com/94774069/245753889-b48dd7c9-38d2-4e5f-b86d-6b28cf3be3f3.jpg"
               alt="Your Img"
             />
-            <div class="overlay"></div>
+            <div className="overlay"></div>
           </div>
         </div>
       </div>

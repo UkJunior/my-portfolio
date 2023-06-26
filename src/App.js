@@ -20,7 +20,6 @@ const App = () => {
     },
     ]
 
-    console.log("test",<Home/>)
           
 return (
   <div className="App">
