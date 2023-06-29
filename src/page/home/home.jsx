@@ -18,7 +18,6 @@ function Home() {
       <About/>
       <Skill/>
       <Project/>
-      <Banner/>
       <Footer/>
     </div>
   )

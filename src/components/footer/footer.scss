@@ -1,0 +1,101 @@
+.footer {
+  border: 1px solid red;
+  padding-top: 164px;
+
+  .footer_section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .footer_left {
+      width: 494px;
+      flex-shrink: 0;
+      text-align: left;
+      h1 {
+        color: #313169;
+        font-size: 32px;
+        font-family: Aleo;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      p {
+        display: flex;
+        width: 461px;
+        flex-direction: column;
+        flex-shrink: 0;
+        color: #08080d;
+        font-size: 24px;
+        font-family: Cabin;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+
+    .footer_right {
+      border-radius: 5px;
+      .my-form {
+        /* Form container styles */
+        text-align: left;
+        label {
+          /* Label styles */
+          display: flex;
+          width: 448px;
+          flex-direction: column;
+          flex-shrink: 0;
+          color: #08080d;
+          font-size: 16px;
+          font-family: Cabin;
+          font-weight: 500;
+          line-height: 150%;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+          /* Input and textarea styles */
+          width: 526px;
+          height: 50px;
+          flex-shrink: 0;
+          width: 100%;
+          padding: 12px 20px;
+          margin: 0 0 40px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 1px;
+          box-sizing: border-box;
+          background: #cecee2;
+          resize: none;
+        }
+
+        textarea {
+          width: 100%;
+          height: 100px;
+          max-width: 526px;
+          flex-shrink: 0;
+          padding: 12px 20px;
+          margin: 0 0 40px 0;
+          box-sizing: border-box;
+          border: 1px solid #cecee2;
+          border-radius: 1px;
+          background: #cecee2;
+          resize: none;
+        }
+
+        .btn_submit {
+          width: 170px;
+          color: white;
+          margin: 8px 0;
+          border: none;
+          height: 55px;
+          flex-shrink: 0;
+          border: 1px solid #313169;
+          background: #313169;
+          cursor: pointer;
+        }
+
+        .btn_submit :hover {
+          background-color: #45a049;
+        }
+      }
+    }
+  }
+}
