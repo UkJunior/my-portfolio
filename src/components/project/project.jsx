@@ -3,7 +3,7 @@ import { project } from "../../data/project/project";
 import project_image from "../../assets/images/project-image.PNG";
 import arrow_next from "../../assets/images/arrow-next.png";
 import Arrow from "../arrow/arrow";
-import "./project.scss";
+import "./project.css";
 
 const Project = () => {
   const [count, setCount] = useState(0);
@@ -16,11 +16,11 @@ const Project = () => {
   const handleClick = () => {
     handleSlide();
     clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(handleSlide, 5000);
+    intervalRef.current = setInterval(handleSlide, 4500);
   };
 
   useEffect(() => {
-    intervalRef.current = setInterval(handleSlide, 5000);
+    intervalRef.current = setInterval(handleSlide, 4500);
 
     return () => {
       clearInterval(intervalRef.current);
@@ -45,27 +45,28 @@ const Project = () => {
             <h2 className="project_title">{project_title}</h2>
             <div className="project_dec">
               <p>{project_desc}</p>
+              <br/>
               <p>{project_tools_desc}</p>
             </div>
             <div className="stack">
               {stack.map((item, index) => (
-                <button className="stack_text" key={index}>
-                  {item}
-                </button>
+                <div className="stack_text" key={index}>
+                  <p>{item}</p>
+                </div>
               ))}
             </div>
-          </div>
           <div className="model">
             {project.map((item, index, i) => {
               return (
                 <div
-                  key={index}
-                  className={`display ${
-                    count === index ? "active" : "neutral"
-                  }`}
+                key={index}
+                className={`display ${
+                  count === index ? "active" : "neutral"
+                }`}
                 ></div>
-              );
-            })}
+                );
+              })}
+              </div>
           </div>
         </div>
       </section>
