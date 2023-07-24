@@ -1,9 +1,21 @@
 .anchor-link {
     text-align: center;
+    
+    .w {
+      width: 45px;
+      height: 45px;
+      font-size: 1em;
+      color: #08080d;
+    }
   }
-  .w {
-    width: 45px;
-    height: 45px;
-    font-size: 1em;
-    color: #08080d;
+  @media (max-width:1000px ) {
+    .anchor-link {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .anchor-link {
+      display: none;
+    }
   }

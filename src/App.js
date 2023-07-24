@@ -2,6 +2,16 @@ import react from "react"
 import "./App.css"
 import Home from "./page/home/home"
 
+import Hero from "./components/hero/hero"
+import Footer from "./components/footer/footer"
+import Navbar from "./components/navbar/navbar"
+import Banner from "./components/banner/banner"
+import Skill from "./components/skill/skill"
+import About from "./components/about/about"
+import Slide from "./components/slide/slide"
+import Project from "./components/project/project"
+
+
 const App = () => {
   const carousal_img = [
     {
@@ -23,7 +33,15 @@ const App = () => {
           
 return (
   <div className="App">
-   <Home/> 
+    <div className="App-header">
+
+    <Navbar/>
+      <Hero/>
+      <About/>
+      <Skill/>
+      <Project/>
+      <Footer/>
+    </div>
   </div>
 )}
 

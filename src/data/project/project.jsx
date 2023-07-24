@@ -21,7 +21,7 @@ export const project = [
         project_title: "bug tracr",
         project_desc: "Lorem ipsum dolor, sit amet consAectetur adipisicing elit. Consectetur quibusdam porro quam accusamus amet quod enim minus hic quia ut.",
         project_tools_desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsum!",
-        stack: ["html", "css", "js", "tailwind" ,"react"]
+        stack: ["html", "js", "tailwind" ,"react"]
     },
     {
         project_title: "second to last tracker",

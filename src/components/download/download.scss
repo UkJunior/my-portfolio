@@ -1,18 +1,31 @@
 .btn_download {
-width: 195px;
-height: 55px;
-font-family: 'Cabin';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-color: #F9F9F9;
-background: #313169;
-border: 1px solid #313169;
-cursor: pointer;
+  width: 195px;
+  height: 55px;
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #f9f9f9;
+  background: #313169;
+  border: 1px solid #313169;
+  cursor: pointer;
 
-&:hover {
+  &:hover {
     background: #48488a;
-    
+  }
 }
+
+@media (max-width: 598px) {
+  .btn_download {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 574px) {
+  .btn_download {
+    width: 100%;
+    font-size: 0.8rem;
+  }
 }

@@ -1,17 +1,18 @@
 import React from "react";
 import skill_img_deco from "../../assets/svg/skill-image-deco.svg";
 import Arrow from "../arrow/arrow";
-import skill_image from "../../assets/images/skill-image.png";
-import html5 from "../../assets/svg/html5-rating.svg";
-import sql from "../../assets/svg/sql-rating.svg";
-import react from "../../assets/svg/react-rating.svg";
-import javascript from "../../assets/svg/javascript-rating.svg";
-import css from "../../assets/svg/css-rating.svg";
+import skill_image from "../../assets/images/skill-pic.PNG";
+import polygon from "../../assets/images/Polygon.svg";
+import html5 from "../../assets/images/html5.PNG";
+import firebase from "../../assets/images/firebase.PNG";
+import react from "../../assets/images/react.PNG";
+import javascript from "../../assets/images/javascript.PNG";
+import css from "../../assets/images/css3.PNG";
 import "./skill.scss";
 
 const Skill = () => {
   return (
-    <section className="skill_container">
+    <section className="skill_container" id="skills">
       <div className="top_skill_section">
         <div className="left">
           <h1>Skill</h1>
@@ -19,12 +20,35 @@ const Skill = () => {
             I take great pleasure in designing and developing various digital
             creations that cater to the needs of modern-day users.{" "}
           </p>
-          <p className="para">
-            The art of creating a fully functional and visually appealing
-            website, app or any other digital medium that falls within the
-            spectrum of web design, development and block-chain is both
-            challenging and rewarding.{" "}
-          </p>
+          <div className="stack_ratings">
+            <div className="rating-box">
+              <img src={html5} alt="" />
+              <a href="">HTML5</a>
+            </div>
+
+            <div className="rating-box">
+              <img src={css} alt="" />
+              <a href="">CSS5</a>
+            </div>
+
+            <div className="rating-box">
+              <img src={javascript} alt="" />
+              <a href="">JAVASCRIPT</a>
+            </div>
+
+            <div className="rating-box">
+      
+              <img src={react} alt="" className="react" />
+              <img src={polygon} alt="" className="polygon" />
+              <a href="">REACT</a>
+            </div>
+
+            <div className="rating-box img">
+              <img src={firebase} alt="" className="firebase" />
+              <img src={polygon} alt="" className="polygon" />
+              <a href="">FIREBASE</a>
+            </div>
+          </div>
         </div>
 
         <div className="right">
@@ -32,48 +56,17 @@ const Skill = () => {
         </div>
       </div>
 
-      <div className="stack_ratings">
-        <div className="rating-box">
-          <div className="inner-circle">
-            <img src={html5} alt="" />
-            <p className="rating">90%</p>
-          </div>
-          <a href="">hTML5</a>
-        </div>
+      <Arrow 
+      activeClass = "active"
+      to= "project"
+      spy= {true}
+      smooth = {true}
+      offset = {-70}
+      duration = {500}
+      
 
-        <div className="rating-box">
-          <div className="inner-circle">
-            <img src={css} alt="" />
-            <p className="rating">70%</p>
-          </div>
-          <a href="">CSS3</a>
-        </div>
-
-        <div className="rating-box">
-          <div className="inner-circle">
-            <img src={javascript} alt="" />
-            <p className="rating">40%</p>
-          </div>
-          <a href="">Javascript</a>
-        </div>
-
-        <div className="rating-box">
-          <div className="inner-circle">
-            <img src={react} alt="" />
-            <p className="rating">70%</p>
-          </div>
-          <a href="">React</a>
-        </div>
-
-        <div className="rating-box">
-          <div className="inner-circle">
-            <img src={sql} alt="" />
-            <p className="rating">20%</p>
-          </div>
-          <a href="">SQL</a>
-        </div>
-      </div>
-      <Arrow />
+      />
+      
     </section>
   );
 };

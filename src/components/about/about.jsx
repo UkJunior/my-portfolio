@@ -7,8 +7,8 @@ import "./about.scss";
 
 function About() {
   return (
-    <div className="bout">
-      <section className="">
+    <section className="bout" >
+      <section className=""  id="about">
         <div className="about_left">
           <img src={AboutDeco} alt="About decoration" className="image_deco" />
           <img src={AboutImage} alt="about Img" className="about_img" />
@@ -34,8 +34,18 @@ function About() {
           </p>
         </div>
       </section>
-      <Arrow />
-    </div>
+
+      
+      <Arrow  
+     activeClass="active" 
+      to= "skills"
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration= {500}
+      />
+    
+    </section>
   );
 }
 

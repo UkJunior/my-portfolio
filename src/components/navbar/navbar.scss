@@ -3,12 +3,12 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #E7E7E7;
+  background: #e7e7e7;
   z-index: 1;
-  
+
   .navbar {
     display: flex;
-    padding: 8px 0;
+    padding: 0.5rem 0;
     align-items: center;
     justify-content: space-between;
     background: white;
@@ -18,9 +18,9 @@
       font-family: "Aleo";
       font-style: normal;
       font-weight: 700;
-      padding-left: 72px;
-      font-size: 24px;
-      line-height: 29px;
+      padding-left: 4.5rem;
+      font-size: 1.5rem;
+      line-height: 1.8125rem;
     }
 
     ul {
@@ -29,9 +29,9 @@
       justify-content: space-between;
       list-style: none;
       text-align: left;
-      width: 492px;
-      height: 56px;
-      margin-right: 79px;
+      width: 30.75rem;
+      height: 3.5rem;
+      margin-right: 5.25rem;
 
       li {
         list-style: none;
@@ -39,15 +39,109 @@
         font-family: "Cabin";
         font-style: normal;
         font-weight: 400;
-        padding-top: 30px;
-        font-size: 16px;
-        line-height: 19px;
+        padding-top: 1.875rem;
+        font-size: 1rem;
+        line-height: 1.1875rem;
+        border-top: 0.1875rem solid white;
 
         &:hover {
           cursor: pointer !important;
-          border-top: 3px solid #313169;
-          border-radius: 0px 0px 5px 5px;
+          border-top: 0.1875rem solid #313169;
+          border-radius: 0px 0px 0.3125rem 0.3125rem;
         }
+      }
+    }
+
+    .hambugar_icon {
+      background-color: #e5e5ee;
+      visibility: hidden;
+      cursor: pointer;
+      padding: 0.625rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    span {
+      display: block;
+      width: 1.5rem;
+      height: 0.125rem;
+      background-color: #313169;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  /* Media Queries */
+  @media (max-width: 600px) {
+    .navbar {
+      justify-content: space-between;
+
+      .navlink {
+        display: none !important;
+      }
+
+      .hambugar_icon {
+        visibility: visible !important;
+        margin-right: 1.25rem;
+        padding: 0.3125rem;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .navbar {
+      .logo {
+        padding-left: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+      }
+
+      ul {
+        width: 50%;
+        margin-right: 0;
+        padding: 0 1.25rem;
+      }
+
+      li {
+        padding-top: 0.9375rem;
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar {
+      .logo {
+        padding-left: 2.5rem;
+        font-size: 1.375rem;
+        line-height: 1.625rem;
+      }
+
+      ul {
+        width: 70%;
+        margin-right: 0;
+        padding: 0 2.5rem;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .navbar {
+      .logo {
+        padding-left: 4.5rem;
+        font-size: 1.5rem;
+        line-height: 1.8125rem;
+      }
+
+      ul {
+        width: 30.75rem;
+        margin-right: 5.25rem;
+        padding: 0;
+      }
+
+      li:hover {
+        border-radius: 0px 0px 0.3125rem 0.3125rem;
       }
     }
   }

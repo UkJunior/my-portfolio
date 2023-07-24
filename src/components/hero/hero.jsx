@@ -6,21 +6,29 @@ import {
   WhatsAppOutlined,
   GithubOutlined,
 } from "@ant-design/icons";
+import Arrow from "../arrow/arrow";
 
 function Hero() {
   return (
-    <div className="hero-section">
+    <div className="hero-section " id="home">
       <div className="hero">
         <div className="hero-left">
-          <h1>
-            Hello, I'm <span>KIZZY</span>
-          </h1>
-          <p>
-            A personate frontend developer, crypto, blockchain enthusiast and a
-            lover of NFT
-          </p>
+          <div className="desc">
+            <h1>
+              Hello, I'm <span>Magnus</span>
+            </h1>
+            <p>
+              A personate Frontend developer, crypto, blockchain enthusiast and
+              a lover of NFT
+            </p>
+            <p>
+              with a specal human ability to love learning
+              and working on teamwork.
+            </p>
+          </div>
 
           <div className="social-links">
+
             <a href="" className="social circle-icon">
               <LinkedinFilled />
             </a>
@@ -32,7 +40,7 @@ function Hero() {
             </a>
           </div>
 
-          <button className="btn-connect-me">Connect with Kzzy</button>
+          <button className="btn-connect-me">Connect with Me</button>
         </div>
         <div className="hero-right">
           <div className="image-container">
@@ -44,11 +52,20 @@ function Hero() {
           </div>
         </div>
       </div>
-      <a href="#" className="anchor-link">
-        <CiCircleChevDown className="w"></CiCircleChevDown>
-      </a>
+
+     <Arrow 
+     activeClass="active" 
+     to="about" 
+     spy={true} 
+     smooth={true}
+     offset={-70}
+     duration={500}
+     />
+      
     </div>
   );
 }
+
+
 
 export default Hero;
